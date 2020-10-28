@@ -1,0 +1,26 @@
+.warning-btn {
+  width: 80%;
+}
+.verify-phone-prefix {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+a.warning-btn {
+  width: 90%;
+  margin: 30px auto 0;
+  border-radius: 30px;
+}
+.policy-text {
+  color: #000;
+  text-align: left;
+}
+.policy-strong-text {
+  text-decoration: underline;
+}
+.policy-content {
+  display: block;
+}
+.left {
+  color: #000;
+}

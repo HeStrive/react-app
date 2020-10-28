@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+// 引入 react
+import React from "react"
+// 引入渲染插件
+import ReactDOM from "react-dom"
+// Provider 包括 App 组件里面传入 store,这样全局都可以操作 store 的数据了
+import { Provider } from "react-redux"
+// 引入 App
+import App from "./App"
+// 引入 store
+import store from "./redux/store"
+// 引入antd-mobile全局样式
+import 'antd-mobile/dist/antd-mobile.css'
+// 引入全局 css 样式
+import './assets/index.css'
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById("root")
+)
